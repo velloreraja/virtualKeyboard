@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>   
+    <h2 class="heading">Virtual keyboard</h2>
+
+        <textarea name="keyboard" id="text-area" cols="30" rows="10" placeholder="Enter Message..."></textarea>
+    <br>
+    
+
+    <div class="keyboard keyboard-hide">
+        <div class="part">
+            <p class="number upp" onlick="myfunction2()">1</p>
+            <p class="number upp">2 </p>
+            <p class="number upp">3</p>
+            <p class="number upp">4</p>
+            <p class="number upp">5</p>
+            <p class="number upp">6</p>
+            <p class="number upp">7</p>
+            <p class="number upp">8</p>
+            <p class="number upp">9</p>
+            <p class="number upp">0</p>
+        </div>
+        <div class="part" class="pot">  
+            <p class="upp">q</p>
+            <p class="upp">w</p>
+            <p class="upp">e</p>
+            <p class="upp">r</p>
+            <p class="upp">t</p>
+            <p class="upp">y</p>
+            <p class="upp">u</p>
+            <p class="upp">i</p>
+            <p class="upp">o</p>
+            <p class="upp">p</p>
+        </div>
+
+        <div class="part" class="pot">
+            <!--------- caps log Button ---------->
+            <p id="cap" class="caps" onclick="myfunction()">
+                caps 
+                <span class="cap-change" ></span>
+            </p>
+            <p class="upp">a</p>
+            <p class="upp">s</p>
+            <p class="upp">d</p>
+            <p class="upp">f</p>
+            <p class="upp">g</p>
+            <p class="upp">h</p>
+            <p class="upp">j</p>
+            <p class="upp">k</p>
+            <p class="upp">l</p>
+            <p class="cross"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+ 
+        <div class="part" class="pot">
+            <p class="upp">z</p>
+            <p class="upp">x</p>
+            <p class="upp">c</p>
+            <p class="upp">v</p>
+            <p class="upp">b</p>
+            <p class="upp">n</p>
+            <p class="upp">m</p>
+            <p class="upp">,</p>
+            <p class="upp">.</p>
+            <p class="upp">?</p>
+        </div>
+        <div class="part" id="pot">
+            <p id="space-bar" class="space-bar">space<i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </div>
+  <script src="keyboard.js"></script>
+</body>
+</html>
